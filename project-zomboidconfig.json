@@ -750,7 +750,7 @@
         "FieldName": "server_browser_announced_ip",
         "InputType": "text",
         "ParamFieldName": "server_browser_announced_ip",
-        "DefaultValue": "",
+        "DefaultValue": "$ApplicationIPBinding",
         "EnumValues": {}
     },
     {
