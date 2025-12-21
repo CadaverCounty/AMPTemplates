@@ -42,6 +42,7 @@ App.HasWriteableConsole=True
 App.HasReadableConsole=True
 App.SupportsLiveSettingsChanges=False
 App.LiveSettingChangeCommandFormat=set {0} "{1}"
+App.ForceIPBinding=True
 App.ApplicationIPBinding=0.0.0.0
 App.Ports=@IncludeJson[project-zomboidports.json]
 App.AdminPortRef=RemoteAdminPort
