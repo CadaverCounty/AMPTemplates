@@ -742,15 +742,30 @@
         "EnumValues": {}
     },
     {
+        "DisplayName": "Server Browser Announced IP Mode",
+        "Category": "Project Zomboid:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Sets whether AMP should automatically select the public IP advertised for the server or if the manual value should be used",
+        "Keywords": "server,browser,announced,ip,server_browser_announced_ip",
+        "FieldName": "server_browser_announced_ip",
+        "InputType": "enum",
+        "ParamFieldName": "server_browser_announced_ip",
+        "DefaultValue": "{{$ApplicationIPBinding}}",
+        "EnumValues": {
+            "{{$ApplicationIPBinding}}": "Automatic (default)",
+            "{{ManualAnnouncedIP}}": "Manual"
+        }
+    },
+    {
         "DisplayName": "Server Browser Announced IP",
         "Category": "Project Zomboid:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Sets the IP from which the server is broadcast. Useful for network configurations with multiple IP addresses such as server farms",
         "Keywords": "server,browser,announced,ip,server_browser_announced_ip",
-        "FieldName": "server_browser_announced_ip",
+        "FieldName": "ManualAnnouncedIP",
         "InputType": "text",
-        "ParamFieldName": "server_browser_announced_ip",
-        "DefaultValue": "{{$ApplicationIPBinding}}",
+        "ParamFieldName": "ManualAnnouncedIP",
+        "DefaultValue": "",
         "EnumValues": {}
     },
     {
